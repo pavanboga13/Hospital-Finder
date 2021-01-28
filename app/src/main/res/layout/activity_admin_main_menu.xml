@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMainMenu">
+
+    <TextView
+        android:id="@+id/admin_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wel-Come Admin"
+        android:textSize="30dp"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageButton
+        android:id="@+id/view_appointments"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/admin_welcome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="35dp"
+        android:background="?attr/colorControlActivated"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_playlist_play_24" />
+
+    <TextView
+        android:id="@+id/appointments_from_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_appointments"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Appointments"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+
+    <ImageButton
+        android:id="@+id/view_customer_review"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/appointments_from_customer"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorControlActivated"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_rate_review_24" />
+
+    <TextView
+        android:id="@+id/customer_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_customer_review"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Review List"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/logout_to_home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/customer_write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorControlActivated"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_hourglass_empty_24" />
+
+    <TextView
+        android:id="@+id/log_out_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout_to_home"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="LogOut"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+</RelativeLayout>

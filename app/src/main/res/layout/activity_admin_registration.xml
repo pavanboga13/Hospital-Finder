@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminRegistration">
+
+    <TextView
+        android:id="@+id/admin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Admin Registration"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/admin_mobile_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_hospital_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter Hospital Mobile NO."
+        android:inputType="number"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/admin_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter Hospital Name"
+        android:inputType="text"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/admin_hospital_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter Hospital EmailID"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/admin_password_confer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/admin_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_mobile_number"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@color/Black" />
+
+    <Button
+        android:id="@+id/admin_Confirm"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_password_confer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:text="Submit
+"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/processBaeforshowuser2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="283dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

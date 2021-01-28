@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginLeft="50dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/title_010"
+                android:layout_width="276dp"
+                android:layout_height="28dp"
+                android:text="Opinion about hospital."
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="12dp" />
+
+            <TextView
+                android:id="@+id/user_ans1"
+                android:layout_width="254dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="10dp"
+                android:text="Pavan"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/title_11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_010"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/title_00100"
+                android:layout_width="274dp"
+                android:layout_height="27dp"
+                android:text="Services took by user."
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.602"
+                tools:layout_editor_absoluteX="12dp" />
+
+            <TextView
+                android:id="@+id/user_ans2"
+                android:layout_width="254dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text="OPA"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_00100" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

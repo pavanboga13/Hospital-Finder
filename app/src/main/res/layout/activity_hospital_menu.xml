@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalMenu">
+
+    <ImageButton
+        android:id="@+id/add_location"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="100dp"
+        android:background="?attr/colorControlActivated"
+        android:src="@drawable/ic_baseline_local_hospital_24" />
+
+    <ImageButton
+        android:id="@+id/view_database"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="66dp"
+        android:layout_toEndOf="@+id/add_location"
+        android:layout_toRightOf="@+id/add_location"
+        android:background="?attr/colorControlActivated"
+        android:src="@drawable/ic_baseline_playlist_play_24" />
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/add_location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Search Location"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_database"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_toEndOf="@+id/Title1"
+        android:layout_toRightOf="@+id/Title1"
+        android:gravity="center"
+        android:text="Pending Appointments"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/open_camera"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/Title1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/colorControlActivated"
+        android:src="@drawable/ic_baseline_photo_camera_24"/>
+
+    <ImageButton
+        android:id="@+id/apointment_accepted"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/Title2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:layout_toRightOf="@+id/open_camera"
+        android:background="?attr/colorControlActivated"
+        android:src="@drawable/ic_baseline_playlist_add_check_24"
+        />
+
+    <TextView
+        android:id="@+id/Title3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/open_camera"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Open Camera"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Title4"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/apointment_accepted"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:gravity="center"
+        android:text="Approved Appointments"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/UserLogout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Log Out"
+        android:textColor="@color/Black"
+        android:background="@color/colorAccent"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_below="@id/Title4"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

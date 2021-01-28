@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getapointment">
+
+    <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="324dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="@color/Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="33dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/hospital_address"
+        android:layout_width="324dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/hospital_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:textColor="@color/Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="33dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_home_24"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="97dp"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/bloodgroup"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Blood Group"
+        android:inputType="textPersonName"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hospital_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodgroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textColor="@color/Black" />
+
+    <Button
+        android:id="@+id/go_back_to_main_menu"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginBottom="64dp"
+        android:text="Cancel Appointment" />
+
+    <Button
+        android:id="@+id/request_apointment"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginBottom="146dp"
+        android:text="Take Appointment" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="227dp"
+        android:src="@drawable/ic_baseline_emoji_people_24"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="307dp"
+        android:src="@drawable/ic_baseline_group_work_24"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="381dp"
+        android:src="@drawable/ic_baseline_assignment_ind_24"
+        android:textColor="@color/Black" />
+
+</RelativeLayout>
